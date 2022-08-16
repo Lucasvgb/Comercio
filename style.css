@@ -1,0 +1,37 @@
+body{ /*Aqui ele muda a tipografia do site inteiro*/
+  font-family: arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2{
+  margin-top: 0px; /*Tirou a margem do topo do h2 */
+}
+
+.comprar{
+  background: #a8f;
+  color: #103;
+  padding: 10px 20px ; /* 10 px para cima e para baixo, e 20 px para os lados*/
+  text-decoration: none; /*Tira o sublinhado*/
+  border-radius: 4px;  
+}
+
+.item{
+  background: #1111;
+  border: 1px solid #e7e7;
+  padding: 20px ;
+  border-radius: 4px;
+  display: grid;
+}
+
+.grid{
+  display: grid; /*Só colocando isso, nao acontece nada, por padrão o grid tem uma coluna apenas, você tem que definir que você quer MAIS de uma COLUNA.*/
+  grid-template-columns: auto auto; /*Para definir mais uma coluna, so dar um espaço e colocar mais números. O FR é uma UNIDADE FRACIONÁRIA,que distribui o espaço que sobra entre ambos os elementos.Coloquei 1fr e 1fr, ele coloca como se fosse 50/50.*/
+  gap: 20px; /*propriedade que vem com o Grid, ele cria margem para os lados e para baixo de 20 px.*/
+  place-content: start;
+  
+  
+
+}
